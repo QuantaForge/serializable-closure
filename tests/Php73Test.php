@@ -1,7 +1,7 @@
 <?php
 
-use QuantaQuirk\SerializableClosure\Exceptions\PhpVersionNotSupportedException;
-use QuantaQuirk\SerializableClosure\SerializableClosure;
+use QuantaForge\SerializableClosure\Exceptions\PhpVersionNotSupportedException;
+use QuantaForge\SerializableClosure\SerializableClosure;
 
 test('serializable closure does not support PHP 7.3', function () {
     new SerializableClosure(function () {

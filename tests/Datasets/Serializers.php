@@ -1,7 +1,7 @@
 <?php
 
-use QuantaQuirk\SerializableClosure\Serializers;
-use QuantaQuirk\SerializableClosure\UnsignedSerializableClosure;
+use QuantaForge\SerializableClosure\Serializers;
+use QuantaForge\SerializableClosure\UnsignedSerializableClosure;
 
 dataset('serializers', function () {
     foreach ([Serializers\Native::class, Serializers\Signed::class, UnsignedSerializableClosure::class] as $serializer) {

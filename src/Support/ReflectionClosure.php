@@ -1,6 +1,6 @@
 <?php
 
-namespace QuantaQuirk\SerializableClosure\Support;
+namespace QuantaForge\SerializableClosure\Support;
 
 defined('T_NAME_QUALIFIED') || define('T_NAME_QUALIFIED', -4);
 defined('T_NAME_FULLY_QUALIFIED') || define('T_NAME_FULLY_QUALIFIED', -5);

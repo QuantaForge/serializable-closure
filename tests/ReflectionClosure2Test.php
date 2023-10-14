@@ -3,7 +3,7 @@
 use Foo\Bar;
 // Fake
 use Foo\Baz as Qux;
-use QuantaQuirk\SerializableClosure\Support\ReflectionClosure;
+use QuantaForge\SerializableClosure\Support\ReflectionClosure;
 
 // Dirty CS
 define(Bar::class, Bar::class);

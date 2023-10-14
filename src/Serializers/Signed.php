@@ -1,17 +1,17 @@
 <?php
 
-namespace QuantaQuirk\SerializableClosure\Serializers;
+namespace QuantaForge\SerializableClosure\Serializers;
 
-use QuantaQuirk\SerializableClosure\Contracts\Serializable;
-use QuantaQuirk\SerializableClosure\Exceptions\InvalidSignatureException;
-use QuantaQuirk\SerializableClosure\Exceptions\MissingSecretKeyException;
+use QuantaForge\SerializableClosure\Contracts\Serializable;
+use QuantaForge\SerializableClosure\Exceptions\InvalidSignatureException;
+use QuantaForge\SerializableClosure\Exceptions\MissingSecretKeyException;
 
 class Signed implements Serializable
 {
     /**
      * The signer that will sign and verify the closure's signature.
      *
-     * @var \QuantaQuirk\SerializableClosure\Contracts\Signer|null
+     * @var \QuantaForge\SerializableClosure\Contracts\Signer|null
      */
     public static $signer;
 
@@ -75,7 +75,7 @@ class Signed implements Serializable
      * @param  array  $signature
      * @return void
      *
-     * @throws \QuantaQuirk\SerializableClosure\Exceptions\InvalidSignatureException
+     * @throws \QuantaForge\SerializableClosure\Exceptions\InvalidSignatureException
      */
     public function __unserialize($signature)
     {
@@ -83,7 +83,7 @@ class Signed implements Serializable
             throw new InvalidSignatureException();
         }
 
-        /** @var \QuantaQuirk\SerializableClosure\Contracts\Serializable $serializable */
+        /** @var \QuantaForge\SerializableClosure\Contracts\Serializable $serializable */
         $serializable = unserialize($signature['serializable']);
 
         $this->closure = $serializable->getClosure();

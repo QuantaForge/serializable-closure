@@ -1,9 +1,9 @@
 <?php
 
-use QuantaQuirk\SerializableClosure\SerializableClosure;
-use QuantaQuirk\SerializableClosure\Serializers;
-use QuantaQuirk\SerializableClosure\Support\ReflectionClosure;
-use QuantaQuirk\SerializableClosure\UnsignedSerializableClosure;
+use QuantaForge\SerializableClosure\SerializableClosure;
+use QuantaForge\SerializableClosure\Serializers;
+use QuantaForge\SerializableClosure\Support\ReflectionClosure;
+use QuantaForge\SerializableClosure\UnsignedSerializableClosure;
 
 /*
 |--------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 <?php
 
-use QuantaQuirk\SerializableClosure\Exceptions\InvalidSignatureException;
-use QuantaQuirk\SerializableClosure\SerializableClosure;
+use QuantaForge\SerializableClosure\Exceptions\InvalidSignatureException;
+use QuantaForge\SerializableClosure\SerializableClosure;
 
 test('secure closure integrity fail', function () {
     $closure = function () {

@@ -3,7 +3,7 @@
 use Foo\Bar as Baz;
 use Foo\Baz\Qux;
 use Foo\Baz\Qux\Forest;
-use QuantaQuirk\SerializableClosure\Support\ReflectionClosure;
+use QuantaForge\SerializableClosure\Support\ReflectionClosure;
 use Tests\Fixtures\Model;
 
 test('is short closure', function () {

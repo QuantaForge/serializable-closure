@@ -1,19 +1,19 @@
 <?php
 
-namespace QuantaQuirk\SerializableClosure;
+namespace QuantaForge\SerializableClosure;
 
 use Closure;
-use QuantaQuirk\SerializableClosure\Exceptions\InvalidSignatureException;
-use QuantaQuirk\SerializableClosure\Exceptions\PhpVersionNotSupportedException;
-use QuantaQuirk\SerializableClosure\Serializers\Signed;
-use QuantaQuirk\SerializableClosure\Signers\Hmac;
+use QuantaForge\SerializableClosure\Exceptions\InvalidSignatureException;
+use QuantaForge\SerializableClosure\Exceptions\PhpVersionNotSupportedException;
+use QuantaForge\SerializableClosure\Serializers\Signed;
+use QuantaForge\SerializableClosure\Signers\Hmac;
 
 class SerializableClosure
 {
     /**
      * The closure's serializable.
      *
-     * @var \QuantaQuirk\SerializableClosure\Contracts\Serializable
+     * @var \QuantaForge\SerializableClosure\Contracts\Serializable
      */
     protected $serializable;
 
@@ -66,7 +66,7 @@ class SerializableClosure
      * Create a new unsigned serializable closure instance.
      *
      * @param  Closure  $closure
-     * @return \QuantaQuirk\SerializableClosure\UnsignedSerializableClosure
+     * @return \QuantaForge\SerializableClosure\UnsignedSerializableClosure
      */
     public static function unsigned(Closure $closure)
     {
@@ -126,7 +126,7 @@ class SerializableClosure
      * @param  array  $data
      * @return void
      *
-     * @throws \QuantaQuirk\SerializableClosure\Exceptions\InvalidSignatureException
+     * @throws \QuantaForge\SerializableClosure\Exceptions\InvalidSignatureException
      */
     public function __unserialize($data)
     {

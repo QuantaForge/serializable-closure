@@ -1,6 +1,6 @@
 <?php
 
-namespace QuantaQuirk\SerializableClosure\Support;
+namespace QuantaForge\SerializableClosure\Support;
 
 class SelfReference
 {

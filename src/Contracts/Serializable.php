@@ -1,6 +1,6 @@
 <?php
 
-namespace QuantaQuirk\SerializableClosure\Contracts;
+namespace QuantaForge\SerializableClosure\Contracts;
 
 interface Serializable
 {

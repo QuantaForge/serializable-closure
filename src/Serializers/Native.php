@@ -1,16 +1,16 @@
 <?php
 
-namespace QuantaQuirk\SerializableClosure\Serializers;
+namespace QuantaForge\SerializableClosure\Serializers;
 
 use Closure;
 use DateTimeInterface;
-use QuantaQuirk\SerializableClosure\Contracts\Serializable;
-use QuantaQuirk\SerializableClosure\SerializableClosure;
-use QuantaQuirk\SerializableClosure\Support\ClosureScope;
-use QuantaQuirk\SerializableClosure\Support\ClosureStream;
-use QuantaQuirk\SerializableClosure\Support\ReflectionClosure;
-use QuantaQuirk\SerializableClosure\Support\SelfReference;
-use QuantaQuirk\SerializableClosure\UnsignedSerializableClosure;
+use QuantaForge\SerializableClosure\Contracts\Serializable;
+use QuantaForge\SerializableClosure\SerializableClosure;
+use QuantaForge\SerializableClosure\Support\ClosureScope;
+use QuantaForge\SerializableClosure\Support\ClosureStream;
+use QuantaForge\SerializableClosure\Support\ReflectionClosure;
+use QuantaForge\SerializableClosure\Support\SelfReference;
+use QuantaForge\SerializableClosure\UnsignedSerializableClosure;
 use ReflectionObject;
 use UnitEnum;
 
@@ -40,7 +40,7 @@ class Native implements Serializable
     /**
      * The closure's reflection.
      *
-     * @var \QuantaQuirk\SerializableClosure\Support\ReflectionClosure|null
+     * @var \QuantaForge\SerializableClosure\Support\ReflectionClosure|null
      */
     protected $reflector;
 
@@ -61,7 +61,7 @@ class Native implements Serializable
     /**
      * The closure's scope.
      *
-     * @var \QuantaQuirk\SerializableClosure\Support\ClosureScope|null
+     * @var \QuantaForge\SerializableClosure\Support\ClosureScope|null
      */
     protected $scope;
 
@@ -207,7 +207,7 @@ class Native implements Serializable
      * Ensures the given closures are serializable.
      *
      * @param  mixed  $data
-     * @param  \QuantaQuirk\SerializableClosure\Support\ClosureScope  $storage
+     * @param  \QuantaForge\SerializableClosure\Support\ClosureScope  $storage
      * @return void
      */
     public static function wrapClosures(&$data, $storage)
@@ -293,7 +293,7 @@ class Native implements Serializable
     /**
      * Gets the closure's reflector.
      *
-     * @return \QuantaQuirk\SerializableClosure\Support\ReflectionClosure
+     * @return \QuantaForge\SerializableClosure\Support\ReflectionClosure
      */
     public function getReflector()
     {

@@ -1,16 +1,16 @@
 <?php
 
-namespace QuantaQuirk\SerializableClosure;
+namespace QuantaForge\SerializableClosure;
 
 use Closure;
-use QuantaQuirk\SerializableClosure\Exceptions\PhpVersionNotSupportedException;
+use QuantaForge\SerializableClosure\Exceptions\PhpVersionNotSupportedException;
 
 class UnsignedSerializableClosure
 {
     /**
      * The closure's serializable.
      *
-     * @var \QuantaQuirk\SerializableClosure\Contracts\Serializable
+     * @var \QuantaForge\SerializableClosure\Contracts\Serializable
      */
     protected $serializable;
 

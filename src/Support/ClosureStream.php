@@ -1,6 +1,6 @@
 <?php
 
-namespace QuantaQuirk\SerializableClosure\Support;
+namespace QuantaForge\SerializableClosure\Support;
 
 #[\AllowDynamicProperties]
 class ClosureStream
@@ -8,7 +8,7 @@ class ClosureStream
     /**
      * The stream protocol.
      */
-    const STREAM_PROTO = 'quantaquirk-serializable-closure';
+    const STREAM_PROTO = 'quantaforge-serializable-closure';
 
     /**
      * Checks if this stream is registered.

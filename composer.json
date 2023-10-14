@@ -1,7 +1,7 @@
 {
-    "name": "quantaquirk/serializable-closure",
-    "description": "QuantaQuirk Serializable Closure provides an easy and secure way to serialize closures in PHP.",
-    "keywords": ["quantaquirk", "Serializable", "closure"],
+    "name": "quantaforge/serializable-closure",
+    "description": "QuantaForge Serializable Closure provides an easy and secure way to serialize closures in PHP.",
+    "keywords": ["quantaforge", "Serializable", "closure"],
     "license": "proprietary",
     "authors": [
         {
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "QuantaQuirk\\SerializableClosure\\": "src/"
+            "QuantaForge\\SerializableClosure\\": "src/"
         }
     },
     "autoload-dev": {

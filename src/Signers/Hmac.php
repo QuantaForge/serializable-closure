@@ -1,8 +1,8 @@
 <?php
 
-namespace QuantaQuirk\SerializableClosure\Signers;
+namespace QuantaForge\SerializableClosure\Signers;
 
-use QuantaQuirk\SerializableClosure\Contracts\Signer;
+use QuantaForge\SerializableClosure\Contracts\Signer;
 
 class Hmac implements Signer
 {

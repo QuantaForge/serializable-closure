@@ -1,6 +1,6 @@
 <?php
 
-namespace QuantaQuirk\SerializableClosure\Exceptions;
+namespace QuantaForge\SerializableClosure\Exceptions;
 
 use Exception;
 

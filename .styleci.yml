@@ -1,6 +1,6 @@
 php:
   version: 8
-  preset: quantaquirk
+  preset: quantaforge
   finder:
     not-name:
       - ReflectionClosurePhp80Test.php
